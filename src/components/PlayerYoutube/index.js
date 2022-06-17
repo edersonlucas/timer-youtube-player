@@ -8,7 +8,7 @@ import CloseIcon from '@mui/icons-material/Close';
 import EditIcon from '@mui/icons-material/Edit';
 import MinimizeIcon from '@mui/icons-material/Minimize';
 
-class Iframe extends React.Component {
+class PlayerYoutube extends React.Component {
 
   handleCloseClick = () => {
     const { openYoutubePlayer, openCustomUrl } = this.props;
@@ -53,4 +53,4 @@ const mapDispatchToProps = (dispatch) => ({
   openCustomUrl: (open) => dispatch(editCustomUrlAction(open))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Iframe);
+export default connect(mapStateToProps, mapDispatchToProps)(PlayerYoutube);

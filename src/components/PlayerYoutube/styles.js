@@ -8,7 +8,7 @@ const Container = styled.div`
   text-align: center;
   position: absolute;
   transition: all 0.7s;
-  transform: translateY(-100vh);
+  transform: translateY(-200vh);
   z-index: 2;
   background-color: rgba(0,0,0, 0.8);
   backdrop-filter: blur(20px);

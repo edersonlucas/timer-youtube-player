@@ -42,7 +42,8 @@ const Container = styled.div`
   &::after {
     content: "";
     background: url(${backgroundImage});
-    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
     opacity: 0.8;
     top: 0;
     left: 0;

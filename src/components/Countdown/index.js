@@ -7,7 +7,7 @@ import editCustomUrlAction from '../../store/actions/editCustomUrl';
 import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import Timer from '../Timer';
 
-class Stopwatch extends React.Component {
+class Countdown extends React.Component {
   state = {
     setHour: 0,
     setMin: 0,
@@ -56,8 +56,10 @@ class Stopwatch extends React.Component {
   }
 
   handleResetClick = () => {
-    const { setTimer } = this.props;
+    const { setTimer, openYoutubePlayer, openEdit } = this.props;
     setTimer({ hour: 0, min: 0, seg: 0 })
+    openYoutubePlayer({ stopPlayer: true, open: false })
+    openEdit({ open: false })
     this.setState((prevState) => ({
       changedScreen: !prevState.changedScreen,
     }))
@@ -137,4 +139,4 @@ const mapDispatchToProps = (dispatch) => ({
   openEdit: (open) => dispatch(editCustomUrlAction(open))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Stopwatch);
+export default connect(mapStateToProps, mapDispatchToProps)(Countdown);

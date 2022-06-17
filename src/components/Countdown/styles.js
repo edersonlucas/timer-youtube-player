@@ -24,7 +24,8 @@ export const Container = styled.div`
     border-radius: 5px;
     color: white;
     height: 50px;
-    width: 150px;
+    max-width: 130px;
+    width: 100%;
     margin-bottom: 3px;
     display: flex;
     align-items: center;
@@ -47,6 +48,8 @@ export const Container = styled.div`
 
 export const ContainerButtons = styled.div`
   display: flex;
+  max-width: 200px;
+  width: 100%;
 
   > button {
     border: none;
@@ -55,8 +58,9 @@ export const ContainerButtons = styled.div`
     border-radius: 5px;
     color: white;
     height: 50px;
-    width: 80px;
-    margin: 10px 5px 0 5px;
+    margin: 10px 5px;
+    /* width: 100px; */
+    width: 100%;
   }
 
   > button:hover {

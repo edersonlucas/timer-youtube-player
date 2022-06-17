@@ -1,7 +1,7 @@
 import React from 'react';
 import Container from './styles'
-import Stopwatch from '../../components/Stopwatch';
-import Iframe from '../../components/Iframe';
+import Countdown from '../../components/Countdown';
+import PlayerYoutube from '../../components/PlayerYoutube';
 import FormCustomUrlYB from '../../components/FormCustomUrlYB';
 
 class Home extends React.Component {
@@ -10,8 +10,8 @@ class Home extends React.Component {
     return (
       <Container>
         <FormCustomUrlYB />
-        <Iframe />
-        <Stopwatch />
+        <PlayerYoutube />
+        <Countdown />
       </Container>
     )
   }

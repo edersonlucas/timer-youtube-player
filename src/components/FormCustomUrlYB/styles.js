@@ -15,7 +15,7 @@ const Form = styled.form`
   backdrop-filter: blur(20px);
   position: absolute;
   transition: all 0.7s;
-  transform: translateY(-100vh);
+  transform: translateY(-200vh);
   z-index: 4;
 
   >label {
