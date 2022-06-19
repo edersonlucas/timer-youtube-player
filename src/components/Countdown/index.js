@@ -39,7 +39,7 @@ class Countdown extends React.Component {
 
   handleSetTimeClick = () => {
     const { setHour, setMin, setSeg } = this.state;
-    if((setHour <= 24 && setHour > 0) || (setMin <= 59 && setMin > 0) || (setSeg <= 59 && setSeg > 0)) {
+    if((setHour <= 24 && setHour >= 0) && (setMin <= 59 && setMin >= 0) && (setSeg <= 59 && setSeg >= 0)) {
       const { setTimer } = this.props;
       setTimer({
         hour: Math.round(String(setHour).replace(/^0+(?!\.|$)/, '')), // Regex remover zero 
