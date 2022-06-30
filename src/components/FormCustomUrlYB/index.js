@@ -23,7 +23,12 @@ class FormCustomUrlYB extends React.Component {
         invalidLink: false,
       })
     } else if (urlInput.includes('https://www.youtube.com/watch?v=')) {
-      const urlVideo = urlInput.slice(urlInput.indexOf('watch?v=')+8, urlInput.indexOf('&ab'))
+      let urlVideo;
+      if(urlInput.includes('&ab')) {
+        urlVideo = urlInput.slice(urlInput.indexOf('watch?v=')+8, urlInput.indexOf('&ab'))
+      } else {
+        urlVideo = urlInput.replace('https://www.youtube.com/watch?v=', '')
+      }
       setUrl(urlVideo)
       openAndClose(false)
       this.setState({
