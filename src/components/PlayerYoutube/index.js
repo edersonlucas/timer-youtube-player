@@ -34,7 +34,7 @@ class PlayerYoutube extends React.Component {
         <button type="button" onClick={ this.handleEditClick }><EditIcon /></button>
         <button type="button" onClick={ this.handleCloseClick }><CloseIcon/></button>
         <Timer />
-        <iframe src={!stopPlayer ? customUrl ? `https://www.youtube.com/embed/${customUrl}` : "https://www.youtube.com/embed/anypqg9428Y" : "" } title="YouTube video player"></iframe>
+        <iframe src={!stopPlayer ? customUrl ? `https://www.youtube.com/embed/${customUrl}` : "https://www.youtube.com/embed/pnGdK_SQlw8" : "" } title="YouTube video player"></iframe>
         <button type="button" onClick={ this.handleMinimizeClick }><MinimizeIcon/></button>
       </Container>
     )
